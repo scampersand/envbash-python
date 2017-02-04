@@ -21,6 +21,6 @@ def test_through(tmpdir):
     tmpfile = tmpdir.join('env.bash')
     tmpfile.write('FOO=BAR')
     if 'FOO' in os.environ:
-        del os.environ['FOO']
+        del os.environ['FOO']  # pragma: no cover
     envbash.load_envbash(str(tmpfile))
     assert os.environ['FOO'] == 'BAR'

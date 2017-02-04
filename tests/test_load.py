@@ -8,7 +8,7 @@ from envbash.load import load_envbash
 def test_load_add_remove(mocker):
     # original environ lacks A but has C and E
     if 'A' in os.environ:
-        del os.environ['A']
+        del os.environ['A']  # pragma: no cover
     os.environ['C'] = 'D'
     os.environ['E'] = 'F'
 
