@@ -10,10 +10,12 @@ Supports Python 2.7 and 3.3+
 Rationale
 ---------
 
-[12-factor apps](https://12factor.net/) require [configuration loaded from the environment](https://12factor.net/config).
+`12-factor apps <https://12factor.net/>`_ require `configuration loaded from the
+environment <https://12factor.net/config>`_.
 
 That's easy on a platform like Heroku, where the environment is preset by the
-user with [commands like `heroku config:set`](https://devcenter.heroku.com/articles/config-vars).
+user with `commands like ``heroku config:set``
+<https://devcenter.heroku.com/articles/config-vars>`_.
 But it's messier in development and non-Heroku deployments, where the
 environment might need to be loaded from a file.
 
@@ -31,7 +33,7 @@ of another configuration language:
 3. For better or worse, using a script means that environment variables can be
    set using the full power of the shell, including reading from other files.
 
-Commonly the external file is called `env.bash`, hence the name of this project.
+Commonly the external file is called ``env.bash``, hence the name of this project.
 
 Installation
 ------------
