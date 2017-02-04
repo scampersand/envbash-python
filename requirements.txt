@@ -1,0 +1,5 @@
+# This file is for development and testing only.
+# Runtime requirements are in setup.py install_requirements.
+
+pytest==3.0.6
+pytest-mock
