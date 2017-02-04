@@ -13,11 +13,11 @@ Rationale
 `12-factor apps <https://12factor.net/>`_ require `configuration loaded from the
 environment <https://12factor.net/config>`_.
 
-That's easy on a platform like Heroku, where the environment is preset by the
-user with `commands like ``heroku config:set``
-<https://devcenter.heroku.com/articles/config-vars>`_.
-But it's messier in development and non-Heroku deployments, where the
-environment might need to be loaded from a file.
+That's `easy on a platform like Heroku
+<https://devcenter.heroku.com/articles/config-vars>`_, where the environment is
+preset by the user with commands like ``heroku config:set``. But it's messier in
+development and non-Heroku deployments, where the environment might need to be
+loaded from a file.
 
 This package provides a mechanism for sourcing a Bash script to update Python's
 environment (``os.environ``). There are reasons for using a Bash script instead
