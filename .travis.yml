@@ -6,7 +6,9 @@ python:
   - "3.5"
   - "3.6"
   - "pypy"
-  - "pypy3"
+  # travis pypy3 is old and doesn't supply unittest.mock which pytest-mock requires.
+  # https://travis-ci.org/scampersand/envbash/jobs/198414730
+  #- "pypy3"
 env:
   global:
     - COVERAGE_CMD="coverage run --append --source envbash,tests -m"
