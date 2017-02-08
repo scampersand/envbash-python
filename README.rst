@@ -66,7 +66,7 @@ This can be loaded into Python:
 
     load_envbash('env.bash')
 
-    print(os.environ['FOO'])  #=> prints BAR
+    print(os.environ['FOO'])  #=> bar baz qux
 
 Legal
 -----
