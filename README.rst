@@ -1,6 +1,6 @@
-=======
-envbash
-=======
+==============
+envbash-python
+==============
 
 |PyPI| |Build Status| |Coverage Report|
 
@@ -73,15 +73,15 @@ Legal
 
 Copyright 2017 `Scampersand LLC <https://scampersand.com>`_
 
-Released under the `MIT license <https://github.com/scampersand/envbash/blob/master/LICENSE>`_
+Released under the `MIT license <https://github.com/scampersand/envbash-python/blob/master/LICENSE>`_
 
 .. _PyPI: https://pypi.python.org/pypi/envbash
 
-.. |Build Status| image:: https://img.shields.io/travis/scampersand/envbash/master.svg?style=plastic
-   :target: https://travis-ci.org/scampersand/envbash?branch=master
+.. |Build Status| image:: https://img.shields.io/travis/scampersand/envbash-python/master.svg?style=plastic
+   :target: https://travis-ci.org/scampersand/envbash-python?branch=master
 
-.. |Coverage Report| image:: https://img.shields.io/codecov/c/github/scampersand/envbash/master.svg?style=plastic
-   :target: https://codecov.io/gh/scampersand/envbash/branch/master
+.. |Coverage Report| image:: https://img.shields.io/codecov/c/github/scampersand/envbash-python/master.svg?style=plastic
+   :target: https://codecov.io/gh/scampersand/envbash-python/branch/master
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/envbash.svg?style=plastic
    :target: PyPI_

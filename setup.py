@@ -13,7 +13,7 @@ setup(
     version='1.1.0',
     description='Source env.bash script to update environment',
     long_description=long_description,
-    url='https://github.com/scampersand/envbash',
+    url='https://github.com/scampersand/envbash-python',
     author='Aron Griffis',
     author_email='aron@scampersand.com',
     license='MIT',
