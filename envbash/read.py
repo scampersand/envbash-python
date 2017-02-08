@@ -22,7 +22,9 @@ def read_envbash(envbash, bash='bash', env=os.environ,
     Read ``envbash`` and return the resulting environment as a dictionary.
     """
     # make sure the file exists and is readable.
-    # unreadable will raise PermissionError which isn't caught here.
+    # alternatively we could test os.access (especially on Python 3.3+ with
+    # effective_ids) but this approach raises FileNotFoundError or
+    # PermissionError which is what we want.
     try:
         with open(envbash):
             pass
