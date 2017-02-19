@@ -59,17 +59,16 @@ This can be loaded into Python:
 FAQ
 ---
 
-How is this different from `dotenv <https://github.com/bkeepers/dotenv>`__?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How is this different from `dotenv <https://github.com/theskumar/python-dotenv>`__?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Both projects aim to solve the same problem, but differ in approach. In
 particular, dotenv uses an ad hoc config syntax whereas envbash uses
 Bash.
 
-dotenv's syntax becomes a problem with multi-line strings. The `usage
-instructions <https://github.com/bkeepers/dotenv#usage>`__ suggest
-sourcing ``.env`` into the shell, but the dotenv format for multi-line
-strings isn't compatible with the shell.
+dotenv's syntax becomes a problem with multi-line strings. dotenv intends for
+the ``.env`` file to be readable by the shell, but the dotenv format for
+multi-line strings isn't compatible with the shell.
 
 If the point is to have a configuration language that's well-suited to
 environment variables, it's hard to beat pure Bash, and it's guaranteed
