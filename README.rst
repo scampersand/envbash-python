@@ -5,7 +5,7 @@ envbash-python
 |PyPI| |Build Status| |Coverage Report|
 
 Python module for sourcing a bash script to augment the environment.
-Supports Python 2.7 and 3.3+
+Supports Python 2.7 and 3.4+
 
 Rationale
 ---------
@@ -165,7 +165,7 @@ See `envbash-ruby <https://github.com/scampersand/envbash-ruby>`__
 Legal
 -----
 
-Copyright 2017 `Scampersand LLC <https://scampersand.com>`_
+Copyright 2017-2018 `Scampersand LLC <https://scampersand.com>`_
 
 Released under the `MIT license <https://github.com/scampersand/envbash-python/blob/master/LICENSE>`_
 
