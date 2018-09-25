@@ -2,7 +2,7 @@
 envbash-python
 ==============
 
-|PyPI| |Build Status| |Coverage Report|
+|PyPI| |Build Status| |Coverage Report| |Python Versions|
 
 Python module for sourcing a bash script to augment the environment.
 Supports Python 2.7 and 3.4+
@@ -178,4 +178,7 @@ Released under the `MIT license <https://github.com/scampersand/envbash-python/b
    :target: https://codecov.io/gh/scampersand/envbash-python/branch/master
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/envbash.svg?style=plastic
+   :target: PyPI_
+
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/envbash.svg?style=plastic
    :target: PyPI_
