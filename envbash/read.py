@@ -17,7 +17,7 @@ FIXUPS = ['_', 'OLDPWD', 'PWD', 'SHLVL']
 
 
 def read_envbash(envbash, bash='bash', env=os.environ,
-                 missing_ok=False, fixups=None, arguments=[]):
+                 missing_ok=False, fixups=None, args=None):
     """
     Source ``envbash`` and return the resulting environment as a dictionary.
     """
@@ -33,9 +33,8 @@ def read_envbash(envbash, bash='bash', env=os.environ,
             return
         raise
 
-    # sanitize arguments and join them into a single string
-    sanitized_arguments = map(lambda x: pipes.quote(x), arguments)
-    sanitized_argstring = ' '.join(sanitized_arguments)
+    # quote args since they will be interpreted by shell
+    quoted_args = ' '.join(pipes.quote(x) for x in args or [])
 
     # construct an inline script which sources env.bash then prints the
     # resulting environment so it can be eval'd back into this process.
@@ -43,7 +42,7 @@ def read_envbash(envbash, bash='bash', env=os.environ,
         set -a
         source {} {} >/dev/null
         {} -c "import os; print(repr(dict(os.environ)))"
-    '''.format(pipes.quote(envbash), sanitized_argstring, pipes.quote(sys.executable))
+    '''.format(pipes.quote(envbash), quoted_args, pipes.quote(sys.executable))
 
     # run the inline script with bash -c, capturing stdout. if there is any
     # error output from env.bash, it will pass through to stderr.
