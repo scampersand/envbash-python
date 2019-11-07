@@ -74,7 +74,7 @@ def read_envbash(envbash, bash='bash', env=os.environ,
 
     # work around PEP 538
     # https://www.python.org/dev/peps/pep-0538/#explicitly-setting-lc-ctype-for-utf-8-locale-coercion
-    if sys.version_info > (3, 7) and \
+    if sys.version_info > (3, 6) and \
             env is not os.environ and \
             nenv.get('LC_CTYPE') == 'C.UTF-8':
         del nenv['LC_CTYPE']
