@@ -1,16 +1,6 @@
-from __future__ import absolute_import, unicode_literals
-
 import os
 import pytest
 from envbash.read import read_envbash
-
-
-try:
-    FileNotFoundError
-except NameError:
-    # Python 2
-    FileNotFoundError = IOError
-    PermissionError = IOError
 
 
 def test_read_missing_not_ok(tmpdir):
