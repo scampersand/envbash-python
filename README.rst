@@ -171,8 +171,8 @@ Released under the `MIT license <https://github.com/scampersand/envbash-python/b
 
 .. _PyPI: https://pypi.python.org/pypi/envbash
 
-.. |Build Status| image:: https://img.shields.io/travis/scampersand/envbash-python/master.svg?style=plastic
-   :target: https://travis-ci.org/scampersand/envbash-python?branch=master
+.. |Build Status| image:: https://img.shields.io/github/actions/workflow/status/scampersand/envbash-python/test.yml?branch=master&style=plastic
+   :target: https://github.com/scampersand/envbash-python/actions/workflows/test.yml
 
 .. |Coverage Report| image:: https://img.shields.io/codecov/c/github/scampersand/envbash-python/master.svg?style=plastic
    :target: https://codecov.io/gh/scampersand/envbash-python/branch/master
