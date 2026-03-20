@@ -1,7 +1,7 @@
 from __future__ import absolute_import, unicode_literals
 
 import os
-import pipes
+import shlex
 import subprocess
 import sys
 
@@ -34,7 +34,7 @@ def read_envbash(envbash, bash='bash', env=os.environ,
         raise
 
     # quote args since they will be interpreted by shell
-    quoted_args = ' '.join(pipes.quote(x) for x in args or [])
+    quoted_args = ' '.join(shlex.quote(x) for x in args or [])
 
     # construct an inline script which sources env.bash then prints the
     # resulting environment so it can be eval'd back into this process.
@@ -42,7 +42,7 @@ def read_envbash(envbash, bash='bash', env=os.environ,
         set -a
         source {} {} >/dev/null
         {} -c "import os; print(repr(dict(os.environ)))"
-    '''.format(pipes.quote(envbash), quoted_args, pipes.quote(sys.executable))
+    '''.format(shlex.quote(envbash), quoted_args, shlex.quote(sys.executable))
 
     # run the inline script with bash -c, capturing stdout. if there is any
     # error output from env.bash, it will pass through to stderr.
