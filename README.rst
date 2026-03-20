@@ -2,7 +2,7 @@
 envbash-python
 ==============
 
-|PyPI| |Build Status| |Coverage Report| |Python Versions|
+|PyPI| |Build Status| |Python Versions|
 
 Python module for sourcing a bash script to augment the environment.
 Supports Python 2.7 and 3.4+
